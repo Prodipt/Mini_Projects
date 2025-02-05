@@ -1,28 +1,29 @@
 # Mini Projects
 
-<h1>Calendar</h1>
-Discription : something
-<br>
-<h1>Countdown App</h1>
+<h3>Calendar</h3>
 Discription : something
 <br>
 
-<h1>Dictionary</h1>
+<h3>Countdown App</h3>
 Discription : something
 <br>
 
-<h1>Image Scroller</h1>
+<h3>Dictionary</h3>
 Discription : something
 <br>
 
-<h1>Glass site</h1>
+<h3>Image Scroller</h3>
 Discription : something
 <br>
 
-<h1>ToDo List</h1>
+<h3>Glass site</h3>
 Discription : something
 <br>
 
-<h1>Weather</h1>
+<h3>ToDo List</h3>
+Discription : something
+<br>
+
+<h3>Weather</h3>
 Discription : something
 
