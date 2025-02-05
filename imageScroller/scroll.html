@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Scroller</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="gallery-wrap">
+        <img src="images/back.png" id="backBtn" >
+        <div class="gallery">
+            <div>
+                <span><img src="images/Portrait of a Kundavai.jpg"></span>
+                <span><img src="images/close up portrait of a monk clicking pictures with.jpg"></span>
+                <span><img src="images/beautiful young man wearing glasses.jpg" ></span>
+            </div>
+            <div>
+                <span><img src="images/an exhausted christian bale as shinji ikari in his.jpg"></span>
+                <span><img src="images/a draw of a blind man with a hat.jpg"></span>
+                <span><img src="images/a _ fantasy _ style _ portrait _ painting _ of bar.jpg" ></span>
+            </div>
+        </div>
+        <img src="images/next.png" id="nextBtn">
+    </div>
+    
+
+<script>
+
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.querySelector("backBtn");
+    let nextBtn = document.querySelector("nextBtn");
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+    });
+
+    nextBtn.addEventListener("click", ()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft +=900 ;
+    });
+
+    backBtn.addEventListener("click", ()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -=900 ;
+    });
+
+
+</script>
+</body>
+</html>
